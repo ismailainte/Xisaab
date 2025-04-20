@@ -1,1 +1,21 @@
+howl kalkuleytar(tiro1, tiro2, hawl) {
+    haddii (hawl == "isku dar") {
+        soo celi (tiro1 + tiro2)
+    } haddii kale haddii (hawl == "isku jar") {
+        soo celi (tiro1 - tiro2)
+    } haddii kale haddii (hawl == "isku dhufo") {
+        soo celi (tiro1 * tiro2)
+    } haddii kale haddii (hawl == "isku qaybi") {
+        haddii (tiro2 != 0) {
+            soo celi (tiro1 / tiro2)
+        } haddii kale {
+            soo celi ("Qaybin aan suurtagal ahayn: eber lama qaybin karo")
+        }
+    } haddii kale {
+        soo celi ("Hawl lama garanayo")
+    }
+}
+
+natiijo = kalkuleytar(10, 5, "isku dar")
+qor(natiijo)
 
